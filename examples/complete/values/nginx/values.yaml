@@ -1,0 +1,5 @@
+readinessProbe:
+  enabled: false
+
+image:
+  tag: ${tag}
