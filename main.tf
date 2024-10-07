@@ -22,7 +22,7 @@ resource "helm_release" "chart" {
   skip_crds           = try(each.value.skip_crds, false)
   verify              = try(each.value.verify, false)
 
-  values = try(each.value.values, false) || try(each.value.values_file_vars, false) != false ? [try(each.value.values, templatefile("${var.values_path}/${each.key}/values.yaml", each.value.values_file_vars))] : []
+  values = try(each.value.values, false) || try(each.value.values_file_vars, false) != false ? [try(each.value.values, templatefile("${var.values_path}/${each.key}.yaml", each.value.values_file_vars))] : []
 
   dynamic "set" {
     for_each = try(each.value.sets, [])

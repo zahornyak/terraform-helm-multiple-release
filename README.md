@@ -88,7 +88,7 @@ module "this" {
 }
 ```
 
-`values/nginx/values.yaml`: (this path can be changed using `var.values_path`)
+`values/nginx.yaml`: (this path can be changed using `var.values_path`)
 ```yaml
 image:
   tag: ${tag}
@@ -145,7 +145,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_charts"></a> [charts](#input\_charts) | charts | `any` | n/a | yes |
-| <a name="input_values_path"></a> [values\_path](#input\_values\_path) | Path to the values folder. For example: if `values/development/` and chart in `var.charts` is `nginx` then terraform will try to use `values/development/nginx/values.yaml` | `string` | `"values"` | no |
+| <a name="input_values_path"></a> [values\_path](#input\_values\_path) | Path to the values folder. For example: if `values/development/` and chart in `var.charts` is `nginx` then terraform will try to use `values/development/nginx.yaml` | `string` | `"values"` | no |
 
 ## Outputs
 
