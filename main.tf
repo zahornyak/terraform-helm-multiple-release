@@ -6,7 +6,7 @@ resource "helm_release" "chart" {
   repository_username = try(each.value.repository_username, "")
   repository_password = try(each.value.repository_password, "")
   chart               = try(each.value.chart, each.key)
-  version             = each.value.version
+  version             = try(each.value.version, null)
   namespace           = try(each.value.namespace, each.key)
   wait                = try(each.value.wait, true)
   cleanup_on_fail     = try(each.value.cleanup_on_fail, true)
