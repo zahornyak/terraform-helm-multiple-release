@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.2](https://github.com/zahornyak/terraform-helm-multiple-release/compare/v1.1.1...v1.1.2) (2024-10-28)
+
+
+### Bug Fixes
+
+* outputs ([5980971](https://github.com/zahornyak/terraform-helm-multiple-release/commit/59809715e361dc2852bcbb35c6159e722f2f44c7))
+
 ## [1.1.1](https://github.com/zahornyak/terraform-helm-multiple-release/compare/v1.1.0...v1.1.1) (2024-10-07)
 
 
